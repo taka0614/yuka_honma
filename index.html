@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Yuka-Honma</title>
+        <meta name="description" content="ビューティーサロン">
+
+        <!-- CSS -->
+        <link rel="stylecheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher">
+        <link rel="stylesheet"  href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+
+        <button type="button" class="hmbmenu_btn"><span class="hmbmenu_line"></span></button>
+				
+			<div class="hmbmenu_contents">
+				<ul class="hambmenu_list">
+                    <li class="hambmenu_anchor"><a href="#">TOP</a></li>
+                    <li class="hambmenu_anchor"><a href="#about">ABOUT</a></li>
+                    <li class="hambmenu_anchor"><a href="#treatment">TREATMENT</a></li>
+                    <li class="hambmenu_anchor"><a href="#access">ACCESS</a></li>
+                    <li class="hambmenu_anchor"><a href="#contact">CONTACT</a></li>
+				</ul>
+			</div>
+
+        <!-- ヘッダー -->
+        <header class="header-main">
+
+            <nav class="header-gazou">
+                <img src="img/1.jpg"><img src="img/2.jpg"><img src="img/3.jpg"><img src="img/4.jpg">
+            </nav>
+
+        </header>
+
+        <!-- 名前と画像 -->
+    <div id="saloninfo" class="wrapper">
+        <div class="namae">
+            <span class="namae-salon">Beauty Salon</span><br>
+            <span class="namae-honma">YUKA HONMA</span>
+        </div>
+
+        <div class="gazou1">
+            <img src="img/item.jpg" alt="イメージ1">
+        </div>
+    </div>
+
+        <!-- プロフィール -->
+
+    <div id="about" class="profile wrapper">
+        <article>
+            <div class="profile-left">
+                <h3 class="lefttext">ABOUT</h3><br>
+                <img class="yuka-honma-image" src="img/about.png" alt="yuka_honma"><br>
+                <span class="namae-honmayuka">本間&nbsp;&nbsp;&nbsp;&nbsp;由佳</span>
+        </article>
+
+        <aside>
+            <p>2009年よりエステティックシャンとして<br>女性の身体、お肌に対し美の追求をし、<br>痩身・顔筋マッサージなどの手法を<br>考案して来ました。<br>1人1人の個性、女性らしさの追求を行う事で<br>多くのお客様に、輝いた女性作りの<br>お手伝いをさせて頂きたいと<br>思っております。</p>
+        </aside>
+
+        <div>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/wrStG5JjjfY" title="yuka_honma" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+        <!-- トリートメントメニュー -->
+
+    <div id="treatment" class="treatment wrapper">
+        <h3 class="page-title names">TREATMENT</h3>
+        <div class="treatment-menu">
+
+            <div class="text1 gazou-syosiki">
+                <p class="haifu">ハイフ</p>
+            </div>
+            <div class="text2 gazou-syosiki">
+                <p class="haifu">キャビテーション</p>
+            </div>
+            <div class="text3 gazou-syosiki">
+                <p class="suiso">水素</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="reserve-button">
+        <div class="button"><a href="https://tol-app.jp/s/yuka-honma" class="reserve-link">Reserve<div class="yazirusi"></div></a></div>
+    </div>
+
+        <!-- アクセスとマップ -->
+
+    <section id="access" class="access">
+        <div class="wrapper">
+            <div class="access-info">
+                <h3 class="lefttext">ACCESS</h3>
+                <p>
+                    〒004-0865<br>
+                    札幌市清田区北野5条4丁目<br>
+                    1-2-105<br>
+                    TEL 080-6082-9990
+                </p>
+            </div>
+            <div class="access-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2917.320391131641!2d141.4396504157079!3d43.0136430015671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2b267d2128ad%3A0x46e820f33a6698ab!2z44CSMDA0LTA4NjUg5YyX5rW36YGT5pyt5bmM5biC5riF55Sw5Yy65YyX6YeO77yV5p2h77yU5LiB55uu77yR4oiS77yS!5e0!3m2!1sja!2sjp!4v1660713084978!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+        <!-- コンタクトフォーム -->
+
+    <div id="contact" class="contact wrapper">
+        <h3 class="page-title names">CONTACT</h3>
+        <form action="#">
+                <div>
+                    <label for="name">お名前</label>
+                    <input type="text" id="name" name="your-name">
+                </div>
+
+                <div>
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="your-email">
+                </div>
+
+                <div>
+                    <label for="kenmei">件名</label>
+                    <input type="kenmei" id="kenmei" name="your-kenmei">
+                </div>
+
+                <div>
+                    <label for="message">メッセージ</label>
+                    <textarea id="message" name="your-message"></textarea>
+                </div>
+
+                <div class="submit-button">
+                    <input type="submit" class="contact-button" value="送信">
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+        <!-- フッター部分 -->
+
+        <footer>
+            <div class="wrapper">
+                <p class="footer-text"><small>YUKA HONMA ALL RIGHT RESERVED.</small></p>
+            </div>
+        </footer>
+
+    </body>
+
+</html>

@@ -1,0 +1,1225 @@
+@charset "UTF-8";
+
+/* 共通部分 
+--------------------------------------------------*/
+
+* , *::before , *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    color: #432;
+    background-image: url(img/4760286.jpg);
+    background-color: azure;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: #c79668;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+}
+
+.names {
+  font-family: serif;
+  font-size: 5.5rem;
+}
+
+.gazou-syosiki {
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.haifu {
+  text-shadow: 0 2px 2px #666
+}
+
+.suiso {
+  text-shadow: 0 2px 2px #666
+}
+
+/* ヘッダー 
+--------------------------------------------------------------- */
+
+/*ハンバーガーメニュー*/
+
+/* 画像挿入 */
+
+.header-main {
+    justify-content: space-between;
+    margin-bottom: 120px;
+    margin-left: 15%;
+}
+
+.header-main.wrapper {
+  padding: 0;
+}
+
+.header-gazou img{
+  width: 25%;
+}
+
+/* サロンの名前と画像の挿入
+---------------------------------- */
+
+#saloninfo.wrapper {
+  padding: 0;
+}
+
+.namae {
+    line-height:90%;
+    font-size: 7rem;
+    text-align: center;
+    font-family: serif;
+    margin-bottom: 130px;
+}
+
+.namae-salon{
+    color:darkgrey;
+}
+
+.namae-honma {
+    color: #c79668;
+}
+
+.gazou1 {
+    width: 100%;
+}
+
+#saloninfo {
+    margin-bottom: 120px;
+}
+
+/* プロフィール 
+----------------------------------------------*/
+
+article {
+    width: 100%;
+}
+
+aside {
+    width: 100%;
+    margin-top: 110px;
+}
+
+
+.profile {
+    margin-bottom: 120px;
+    text-align: center;
+}
+
+.lefttext {
+    color: #c79668;
+    font-size: 7rem;
+    font-family: serif;
+}
+
+.yuka-honma-image {
+    width: 75%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+.namae-honmayuka {
+    font-size: 3.6rem;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.page-title {
+    color: #c79668;
+}
+
+.page-title2 {
+    color: #c79668;
+    margin-top: 50px;
+}
+
+/*トリートメントメニュー
+-----------------------------------------------------------*/
+
+.treatment {
+  margin-bottom: 120px;
+}
+
+.treatment h3{
+  text-align: center;
+  font-size: 7rem;
+}
+
+h3.page-title.names {
+  margin: 0px 0px 88px;
+}
+
+/* メニューの画像 */
+
+.treatment-menu {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.text1 {
+  position: relative;
+  z-index: 0;
+  background-image: url(img/IMG_4050.JPG);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 32%;
+}
+
+.text1::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: brightness(75%);
+  /* 最背面へ */
+  z-index: -1;
+  }
+
+  .text2 {
+    position: relative;
+    z-index: 0;
+    background-image: url(img/3max_1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 32%;
+  }
+  
+  .text2::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: brightness(75%);
+    /* 最背面へ */
+    z-index: -1;
+    }
+
+.text3 {
+  position: relative;
+  z-index: 0;
+  background-image: url(img/IMG_4052.JPG);
+  background-size: cover;
+  background-position: right;
+  height: 600px;
+  width: 32%;
+}
+
+.text3::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: brightness(75%);
+  /* 最背面へ */
+  z-index: -1;
+  }
+
+/* メニューのテキスト */
+
+.treatment-menu p {
+  color: #fff;
+  font-size: 2.25rem;
+  font-family: serif;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* ボタン */
+
+.button {
+  margin-left: 0;
+  width: 85%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: #fff;
+  background-color: #c79668;
+  cursor: pointer;
+  font-family: serif;
+}
+
+.yazirusi {
+      margin-top: 54px;
+      margin-left: 25px;
+      width: 180px;
+      height: 40px;
+      border-bottom: 2px solid #fff;
+      border-right: 2px solid #fff;
+      transform: skew(45deg);
+}
+
+.reserve-button {
+  margin-bottom: 50px;
+}
+
+.reserve-link {
+  color: #fff;
+  display: flex;
+}
+
+/* アクセスと地図
+-------------------------------------------------------------- */
+
+.access .wrapper {
+  display: block;
+  margin-bottom: 110px;
+}
+
+.access-info {
+  width: 100%;
+  text-align: center;
+}
+
+.access-info p {
+  margin-top: 50px;
+  padding: 17px 7px;
+  color: #c79668;
+  font-size: 3rem;
+  font-family:serif;
+  font-weight:bold
+}
+
+.access-map {
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 650px;
+  margin-top: 60px;
+}
+
+.access {
+  margin-bottom: 95px;
+}
+
+/* コンタクトフォーム
+---------------------------------------------------------- */
+
+
+.contact.wrapper {
+  padding: 0 8%;
+  margin-bottom: 110px;
+}
+
+.contact h3 {
+  text-align: center;
+  font-size: 7rem;
+}
+
+label {
+  display: block;
+  color: #c79668;
+  font-size: 1.45rem;
+  margin-bottom: 18px;
+  text-align: left;
+  font-family: serif;
+}
+
+form div {
+  margin-bottom: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="kenmei"],
+textarea {
+  border: 1px solid #432;
+  border-radius: 1px;
+  padding: 23px;
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="kenmei"] {
+  width: 100%;
+  height: 40px;
+  max-height: 100px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  max-height: 240px;
+  resize: none;
+}
+
+.submit-button {
+  margin-top: 54px;
+  margin-bottom: 54px;
+  text-align: center;
+}
+
+.contact-button {
+  width: 280px;
+  height: 110px;
+
+  background-color: #c79668;
+  color: #fff;
+  border: none;
+  font-size: 2.5rem;
+  font-family: serif;
+}
+
+.contact-button:hover {
+  cursor: pointer;
+}
+
+/*フッター
+---------------------------------------------------*/
+
+footer {
+  text-align: center;
+  background: #c79668;
+  padding: 1px 0;
+  margin-top: 140px;
+}
+
+footer p {
+  color: #fff;
+  font-size: 1.275rem;
+  font-family: serif;
+}
+
+
+
+/* 携帯用
+----------------------------------------------------- */
+
+@media (max-width: 600px) {
+  
+  /* ヘッダー */
+
+  .menu-trigger,
+  .menu-trigger span {
+      display: none;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  /* ハンバーガーメニューは非表示 */
+
+  .header-main.wrapper {
+    padding: 0%;
+  }
+
+  .header-gazou img {
+    width: 25%;
+  }
+
+  /* 名前と画像 */
+
+  #saloninfo.wrapper {
+    padding: 0%;
+  } 
+
+  .namae {
+    line-height:100%;
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: serif;
+    margin-bottom: 80px;
+    margin-top: 80px;
+  }
+
+  .namae-honma {
+    padding-left: 0%;
+  }
+
+  .gazou1 {
+    width: 100%;
+  }
+
+  /* プロフィール 
+----------------------------------------------*/
+
+article {
+  width: 100%;
+}
+
+aside {
+  width: 100%;
+  margin-top: 50px;
+}
+
+
+.profile {
+  display: block;
+  margin: 80px 0;
+  text-align: center;
+}
+
+.lefttext {
+  display: block;
+  color: #c79668;
+  font-size: 3.5rem;
+  font-family: serif;
+  margin: 35px 0;
+}
+
+.yuka-honma-image {
+  width: 75%;
+}
+
+
+.namae-honmayuka {
+  font-size: 1.6rem;
+  font-family: "Yu Gothic Medium";
+  font-weight: bold;
+}
+
+.page-title {
+  color: #c79668;
+}
+
+.page-title2 {
+  color: #c79668;
+  margin-top: 50px;
+}
+
+/*トリートメントメニュー
+-----------------------------------------------------------*/
+
+.treatment {
+  margin: 80px 0;
+}
+
+.treatment h3{
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+h3.page-title.names {
+  margin: 88px 0px 88px;
+}
+
+/* メニューの画像 */
+
+.gazou-syosiki {
+  margin-bottom: 30px;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.haifu {
+  text-shadow: 0 2px 2px #666
+}
+
+.suiso {
+  text-shadow: 0 2px 2px #666
+}
+
+.treatment-menu {
+  display: block;
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.text1 {
+  position: relative;
+  z-index: 0;
+  background-image: url(yuka_honma/IMG_4050.JPG);
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+
+.text1::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: brightness(75%);
+  /* 最背面へ */
+  z-index: -1;
+  }
+
+.text3 {
+  position: relative;
+  z-index: 0;
+  background-image: url(yuka_honma/IMG_4052.JPG);
+  background-size: cover;
+  background-position: right;
+  height: 600px;
+  width: 100%;
+}
+
+.text3::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: brightness(75%);
+  /* 最背面へ */
+  z-index: -1;
+  }
+
+/* メニューのテキスト */
+
+.treatment-menu p {
+  color: #fff;
+  font-size: 2.25rem;
+  font-family: serif;
+  position: absolute;
+  left: 35%;
+  bottom: -10%;
+  transform: translate(0%,-50%);
+}
+
+/* ボタン */
+
+.button {
+  margin-left: 0;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: #fff;
+  background-color: #c79668;
+  cursor: pointer;
+  font-family: serif;
+}
+
+.yazirusi {
+      margin-top: 54px;
+      margin-left: 25px;
+      width: 180px;
+      height: 40px;
+      border-bottom: 2px solid #fff;
+      border-right: 2px solid #fff;
+      transform: skew(45deg);
+}
+
+.reserve-button {
+  margin-bottom: 10px;
+}
+
+.reserve-link {
+  color: #fff;
+  display: flex;
+}
+
+/* アクセスと地図
+-------------------------------------------------------------- */
+
+.access .wrapper {
+  display: block;
+  justify-content: space-between;
+}
+
+.access-info {
+  width: 100%;
+  text-align: center;
+}
+
+.access-info p {
+  margin: 100px 0;
+  padding: 17px 10px;
+  color: #c79668;
+  font-size: 2rem;
+  font-family:serif;
+  font-weight:bold
+}
+
+.access-map {
+  width: 100%;
+  margin-top: 0;
+}
+
+iframe {
+  width: 100%;
+}
+
+.access {
+  margin: 80px 0;
+}
+
+/* コンタクトフォーム
+---------------------------------------------------------- */
+
+.contact {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.contact h3 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  color: #c79668;
+  font-size: 1.45rem;
+  margin-bottom: 18px;
+  margin-left: 5%;
+  text-align: left;
+  font-family: serif;
+}
+
+form div {
+  margin-bottom: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="kenmei"],
+textarea {
+  border: 1px solid #432;
+  border-radius: 1px;
+  padding: 23px;
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="kenmei"] {
+  width: 80%;
+  height: 40px;
+}
+
+textarea {
+  width: 80%;
+  height: 150px;
+  resize: none;
+}
+
+.submit-button {
+  margin-top: 54px;
+  margin-bottom: 54px;
+}
+
+.contact-button {
+  width: 260px;
+  height: 60px;
+
+  background-color: #c79668;
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  font-family: serif;
+}
+
+.contact-button:hover {
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  background: #c79668;
+  padding: 1px 0;
+  margin-top: 140px;
+}
+
+footer p {
+  color: #fff;
+  font-size: 1.275rem;
+  font-family: serif;
+}
+
+
+
+}
+
+
+/*フッター
+---------------------------------------------------*/
+
+footer {
+  text-align: center;
+  background: #c79668;
+  padding: 1px 0;
+  margin-top: 140px;
+}
+
+footer p {
+  color: #fff;
+  font-size: 1.275rem;
+  font-family: serif;
+}
+
+
+
+/* 400
+----------------------------------------------------- */
+
+@media (max-width: 400px) {
+  
+  /* ヘッダー */
+
+  .menu-trigger,
+  .menu-trigger span {
+      display: none;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  /* ハンバーガーメニューは非表示 */
+
+  .header-main.wrapper {
+    padding: 0%;
+  }
+
+  .header-gazou img {
+    width: 25%;
+  }
+
+  /* 名前と画像 */
+
+  #saloninfo.wrapper {
+    padding: 0%;
+  } 
+
+  .namae {
+    line-height:100%;
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: serif;
+    margin-bottom: 80px;
+    margin-top: 80px;
+  }
+
+  .namae-honma {
+    padding-left: 0%;
+  }
+
+  .gazou1 {
+    width: 100%;
+  }
+
+  /* プロフィール 
+----------------------------------------------*/
+
+article {
+  width: 100%;
+}
+
+aside {
+  width: 100%;
+  margin-top: 50px;
+}
+
+
+.profile {
+  display: block;
+  margin: 80px 0;
+  text-align: center;
+}
+
+.lefttext {
+  display: block;
+  color: #c79668;
+  font-size: 3.5rem;
+  font-family: serif;
+  margin: 35px 0;
+}
+
+.yuka-honma-image {
+  width: 75%;
+}
+
+
+.namae-honmayuka {
+  font-size: 1.6rem;
+  font-family: "Yu Gothic Medium";
+  font-weight: bold;
+}
+
+.page-title {
+  color: #c79668;
+}
+
+.page-title2 {
+  color: #c79668;
+  margin-top: 50px;
+}
+
+/*トリートメントメニュー
+-----------------------------------------------------------*/
+
+.treatment {
+  margin: 80px 0;
+}
+
+.treatment h3{
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+h3.page-title.names {
+  margin: 88px 0px 88px;
+}
+
+/* メニューの画像 */
+
+.gazou-syosiki {
+  margin-bottom: 30px;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.haifu {
+  text-shadow: 0 2px 2px #666
+}
+
+.suiso {
+  text-shadow: 0 2px 2px #666
+}
+
+.treatment-menu {
+  display: block;
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.text1 {
+  position: relative;
+  z-index: 0;
+  background-image: url(yuka_honma/IMG_4050.JPG);
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+
+.text1::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: brightness(75%);
+  /* 最背面へ */
+  z-index: -1;
+  }
+
+.text3 {
+  position: relative;
+  z-index: 0;
+  background-image: url(yuka_honma/IMG_4052.JPG);
+  background-size: cover;
+  background-position: right;
+  height: 600px;
+  width: 100%;
+}
+
+.text3::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: brightness(75%);
+  /* 最背面へ */
+  z-index: -1;
+  }
+
+/* メニューのテキスト */
+
+.treatment-menu p {
+  color: #fff;
+  font-size: 2.25rem;
+  font-family: serif;
+  position: absolute;
+  left: 35%;
+  bottom: -10%;
+  transform: translate(0%,-50%);
+}
+
+/* ボタン */
+
+.button {
+  margin-left: 0;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: #fff;
+  background-color: #c79668;
+  cursor: pointer;
+  font-family: serif;
+}
+
+.yazirusi {
+      margin-top: 54px;
+      margin-left: 25px;
+      width: 180px;
+      height: 40px;
+      border-bottom: 2px solid #fff;
+      border-right: 2px solid #fff;
+      transform: skew(45deg);
+}
+
+.reserve-button {
+  margin-bottom: 10px;
+}
+
+.reserve-link {
+  color: #fff;
+  display: flex;
+}
+
+/* アクセスと地図
+-------------------------------------------------------------- */
+
+.access .wrapper {
+  display: block;
+  justify-content: space-between;
+}
+
+.access-info {
+  width: 100%;
+  text-align: center;
+}
+
+.access-info p {
+  margin: 100px 0;
+  padding: 17px 10px;
+  color: #c79668;
+  font-size: 2rem;
+  font-family:serif;
+  font-weight:bold
+}
+
+.access-map {
+  width: 100%;
+  margin-top: 0;
+}
+
+iframe {
+  width: 100%;
+}
+
+.access {
+  margin: 80px 0;
+}
+
+/* コンタクトフォーム
+---------------------------------------------------------- */
+
+.contact {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.contact h3 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  color: #c79668;
+  font-size: 1.45rem;
+  margin-bottom: 18px;
+  margin-left: 5%;
+  text-align: left;
+  font-family: serif;
+}
+
+form div {
+  margin-bottom: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="kenmei"],
+textarea {
+  border: 1px solid #432;
+  border-radius: 1px;
+  padding: 23px;
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="kenmei"] {
+  width: 80%;
+  height: 40px;
+}
+
+textarea {
+  width: 80%;
+  height: 150px;
+  resize: none;
+}
+
+.submit-button {
+  margin-top: 54px;
+  margin-bottom: 54px;
+}
+
+.contact-button {
+  width: 260px;
+  height: 60px;
+
+  background-color: #c79668;
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  font-family: serif;
+}
+
+.contact-button:hover {
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  background: #c79668;
+  padding: 1px 0;
+  margin-top: 140px;
+}
+
+footer p {
+  color: #fff;
+  font-size: 1.275rem;
+  font-family: serif;
+}
+
+
+
+}
+
+.hmbmenu_btn{
+  width: 80px;
+  height: 80px;
+  padding:0px;
+  border:none;
+  background-color:transparent;
+  position: fixed;
+  top: 2%;
+  left: 3%;
+  z-index:10000;
+}
+.hmbmenu_line{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #c79668;
+  transition: all 300ms 0s ease;
+}
+
+.hmbmenu_line::before,
+.hmbmenu_line::after {
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: #c79668;
+  transition: all 300ms 0s ease;
+}
+
+.hmbmenu_line.hmbmenu_open{
+  background-color:transparent;
+}
+
+.hmbmenu_line::before {
+  transform: translateY(-20px)translateX(-40px);
+}
+
+.hmbmenu_line::after {
+  transform: translateY(20px)translateX(-40px);
+}
+
+.hmbmenu_line.hmbmenu_open::before{
+  transform: translateX(-20px)rotate(45deg);
+
+}
+.hmbmenu_line.hmbmenu_open::after {
+  transform: translateX(-20px)rotate(-45deg);
+}
+.hmbmenu_contents{
+  position:absolute;
+  top: 0;
+  left:-100%;
+  width:100%;
+  height:100vh;
+  transition: all 300ms 0s ease;
+}	
+
+.hmbmenu_contents.hmbmenu_open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  position: fixed;
+  z-index: 10;
+  left: 0px;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/4760286.jpg);
+    background-color: azure;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.hambmenu_list--item{
+  padding:1vh;
+}
+.hambmenu_anchor{
+  text-decoration:none;
+  color:#FFFFFF;
+  letter-spacing:0.2em;
+}
+
+ul.hambmenu_list {
+  color: #c79668;
+  font-size: 6rem;
+  font-family: serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+aside p {
+  font-size: 24px;
+}
